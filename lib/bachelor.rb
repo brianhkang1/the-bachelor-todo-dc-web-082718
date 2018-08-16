@@ -23,9 +23,7 @@ def get_contestant_name(data, occupation)
       array_info.each do |element|
         element.each do |key, value|
           if value == occupation
-            ans = element["name"]
-            array = ans.split
-            real_ans = array[0]
+            real_ans = element["name"]
           end
         end
       end

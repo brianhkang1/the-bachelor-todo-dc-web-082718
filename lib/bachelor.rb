@@ -7,7 +7,8 @@ def get_first_name_of_season_winner(data, season)
         array = ans.split
         real_ans = array[0]
       end
-    end 
+    end
+  end
   real_ans
 end
 

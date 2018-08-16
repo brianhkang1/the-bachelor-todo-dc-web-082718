@@ -5,10 +5,11 @@ def get_first_name_of_season_winner(data, season)
     if which_season == season 
       array_info.each do |element|
         element.each do |key, value|
-        if value == "Winner"
-          ans = array_info["name"]
-          array = ans.split
-          real_ans = array[0]
+          if value == "Winner"
+            ans = array_info["name"]
+            array = ans.split
+            real_ans = array[0]
+          end
         end
       end
     end

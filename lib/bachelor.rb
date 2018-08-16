@@ -1,4 +1,5 @@
 def get_first_name_of_season_winner(data, season)
+  ans = ""
   real_ans = ""
   data.each do |which_season, array_info|
     if which_season == season 

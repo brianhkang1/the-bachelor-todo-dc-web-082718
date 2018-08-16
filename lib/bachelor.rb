@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
     if which_season == season 
       if info["status"] == "Winner"
         ans = info["name"]
-        ans.
+        ans.split!
       end
     end 
 end

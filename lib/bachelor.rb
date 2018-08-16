@@ -19,12 +19,10 @@ end
 def get_contestant_name(data, occupation)
   real_ans = ""
   data.each do |which_season, array_info|
-    if which_season == season 
-      array_info.each do |element|
-        element.each do |key, value|
-          if value == occupation
-            real_ans = element["name"]
-          end
+    array_info.each do |element|
+      element.each do |key, value|
+        if value == occupation
+          real_ans = element["name"]
         end
       end
     end

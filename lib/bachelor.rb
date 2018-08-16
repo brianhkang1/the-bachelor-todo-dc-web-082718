@@ -3,7 +3,8 @@ def get_first_name_of_season_winner(data, season)
   real_ans = ""
   data.each do |which_season, array_info|
     if which_season == season 
-      array_info.each do |key, value|
+      array_info.each do |element|
+        element.each do |key, value|
         if value == "Winner"
           ans = array_info["name"]
           array = ans.split

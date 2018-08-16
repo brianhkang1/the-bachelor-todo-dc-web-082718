@@ -22,7 +22,7 @@ def get_contestant_name(data, occupation)
     if which_season == season 
       array_info.each do |element|
         element.each do |key, value|
-          if value == "Winner"
+          if value == occupation
             ans = element["name"]
             array = ans.split
             real_ans = array[0]

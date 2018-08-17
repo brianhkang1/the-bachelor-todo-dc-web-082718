@@ -59,6 +59,7 @@ end
 
 def get_average_age_for_season(data, season)
   array_of_age = []
+  sum = 0
   data.each do |which_season, array_info|
     if which_season == season
       array_info.each do |element|
@@ -72,4 +73,8 @@ def get_average_age_for_season(data, season)
   array_of_age.collect do |num|
     num.to_f
   end
+  array_of_age.each do |num|
+    sum += num
+  end
+  ans = sum / array_of_age.length
 end

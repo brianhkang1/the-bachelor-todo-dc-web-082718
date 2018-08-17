@@ -50,12 +50,11 @@ def get_occupation(data, hometown)
     array_info.each do |element|
       element.each do |key, value|
         if value == hometown
-          return real_ans = element["name"]
+          return real_ans = element["occupation"]
         end
       end
     end
   end
-  real_ans
 end
 
 def get_average_age_for_season(data, season)

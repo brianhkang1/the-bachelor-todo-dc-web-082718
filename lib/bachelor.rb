@@ -66,6 +66,7 @@ def get_average_age_for_season(data, season)
         element.each do |key, value|
           if key == "age"
             array_of_age.push(value)
+          end
         end
       end
     end

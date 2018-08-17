@@ -69,5 +69,7 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  
+  array_of_age.collect do |num|
+    num.to_f
+  end
 end
